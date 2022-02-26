@@ -12,6 +12,8 @@ def test_divisible_by():
     assert divisors.divisible_by(24) == [2,3,4,6,8,12]
     assert divisors.divisible_by(25) == [5]
     assert divisors.divisible_by(253) == [11, 23]
+    assert divisors.divisible_by(3734) == [2, 1867]
+
 
 def test_is_prime():
     divisors = Divisors()

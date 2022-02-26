@@ -7,7 +7,7 @@ class Divisors():
 
     def divisible_by(self, n):
         array = []
-        i = 1000
+        i = 100000
         while i >= 2:
             if n == i:
                 pass
@@ -19,7 +19,7 @@ class Divisors():
 
     def is_prime(self, n):
         array = []
-        i = 1000
+        i = 100000
         while i >= 2:
             if n == i:
                 pass
