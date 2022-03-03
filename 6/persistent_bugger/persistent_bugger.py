@@ -2,13 +2,15 @@ def number_of_digits(n):
     return len(str(n))
 
 def persistence(n):
-    value = 1
-    for i in range(len(str(n))):
-        value *= int(str(n)[i])
-    if value > 9:
-        persistence(value)
-        return persistence(value)
-
+    n = str(n)
+    count = 0
+    while len(n) > 1:
+        value = 1
+        for i in n:
+            value *= int(i)
+        n = str(value)
+        count += 1
+    return count 
 
 
 # def persistence_second(n):
