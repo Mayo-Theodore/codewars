@@ -14,6 +14,7 @@ class Accum():
             else:
                 new_str += word[index] * (index + 1) + "-"
         return new_str[:-1].title()
+        
 
         #         for i in word:
         #     print(i)
